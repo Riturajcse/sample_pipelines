@@ -5,6 +5,7 @@ resources:
     integration: dockerhub
     versionTemplate:
       sourceName: "library/redis"
+      versionName: "latest"
       
   #- name: version-resource
     #type: version
