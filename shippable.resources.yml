@@ -7,7 +7,7 @@ resources:
       sourceName: "library/redis"
       versionName: "latest"
       
-  #- name: version-resource
-    #type: version
-    #versionTemplate:
-      #versionName: "v1.1.1-rc.3"
+  - name: version-resource
+    type: version
+    versionTemplate:
+      versionName: "v1.1.1-rc.3"
