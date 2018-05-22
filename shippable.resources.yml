@@ -3,11 +3,8 @@ resources:
   - name: box-nginx-1
     type: image
     integration: dockerhub
-    pointer:
+    versionTemplate:
       sourceName: "library/redis"
-      isPull: false
-    seed:
-      versionName: "latest"
       
   #- name: version-resource
     #type: version
