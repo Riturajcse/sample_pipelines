@@ -25,7 +25,7 @@ jobs:
     steps:
       - TASK:
         - *hello
-        #- script: echo "some extra stuff"
+        - script: echo "some extra stuff"
       
 
 
