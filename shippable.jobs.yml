@@ -17,6 +17,8 @@ jobs:
         - script: echo $(shipctl bump_version v5.1.2-rc.1 rc)
         - script: echo $(shipctl bump_version v5.1.2-rc.3 final)
         - script: echo $(shipctl bump_version v5.1.2-rc.3 alpha)
+        - script: echo $(shipctl bump_version v1.1.1-rc.2.beta.2 beta)
+        - script: echo $(shipctl bump_version v1.1.1-beta.2.rc.2 beta)
         #- script: echo $(shipctl bump_version v5.1.2-rcx.3 final)
         #- script: echo $(shipctl bump_version v5.1.2-rc.x final)
         #- script: echo $(shipctl bump_version v5.1.2 patch1)
