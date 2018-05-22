@@ -23,7 +23,8 @@ jobs:
   - name: runSh-job-2
     type: runSh
     steps:
-      - TASK: *hello
+      - TASK:
+        <<: *hello
         - script: echo "some extra stuff"
       
 
