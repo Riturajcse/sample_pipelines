@@ -1,9 +1,13 @@
+TASK: &hello
+  - script: echo "hello"
+  - script: echo $(shipctl get_resource_name hello_major)
+
 jobs:
         
   - name: runSh-job
     type: runSh
     steps:
-      - TASK: &hello
+      - TASK:
         - script: echo "hello"
         - script: echo $(shipctl get_resource_name hello_major)
         - script: echo $(shipctl bump_version 5.1.2 major)
