@@ -1,4 +1,4 @@
-TASK: &hello
+&hello
   - script: echo "hello"
   - script: echo $(shipctl get_resource_name hello_major)
 
