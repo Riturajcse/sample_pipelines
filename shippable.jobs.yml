@@ -1,37 +1,22 @@
-A: &hello
-  - script: echo "hello"
-  - script: echo $(shipctl get_resource_name hello_major)
+templates: &template-script 
+  - echo "common-script line 1"
+  - echo "common-script line 1"
+  - echo "common-script line 1"
 
 jobs:
-        
-  - name: runSh-job
+  - name: sample-job-A
     type: runSh
     steps:
       - TASK:
-        - script: echo "hello"
-        - script: echo $(shipctl get_resource_name hello_major)
-        - script: echo $(shipctl bump_version 5.1.2 major)
-        - script: echo $(shipctl bump_version 5.1.2 minor)
-        - script: echo $(shipctl bump_version 5.1.2 patch)
-        - script: echo $(shipctl bump_version v5.1.2 major)
-        - script: echo $(shipctl bump_version v5.1.2 minor)
-        - script: echo $(shipctl bump_version v5.1.2 patch)
-        - script: echo $(shipctl bump_version v5.1.2 rc)
-        - script: echo $(shipctl bump_version v5.1.2-rc rc)
-        - script: echo $(shipctl bump_version v5.1.2-rc.1 rc)
-        - script: echo $(shipctl bump_version v5.1.2-rc.3 final)
-        - script: echo $(shipctl bump_version v5.1.2-rc.3 alpha)
-        - script: echo $(shipctl bump_version v1.1.1-rc.2.beta.2 beta)
-        - script: echo $(shipctl bump_version v1.1.1-beta.2.rc.2 beta)
+          script:
+            - *template-script
+            - echo "This is job B"
         
-  - name: runSh-job-2
+  - name: sample-job-B
     type: runSh
     steps:
       - TASK:
-        - *hello
-        - script: echo "some extra stuff"
-      
-
-
-   
-        
+          script:
+            - echo "This is job B"
+            - *template-script
+            - echo "This is some more script"
