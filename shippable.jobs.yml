@@ -1,13 +1,26 @@
 jobs:
-  - name: manifest-job
-    type: manifest
+  - name: sample-job-A
+    type: runSh
     steps:
-      - IN: box-nginx-1
-      
-  - name: release-job
-    type: release
-    bump: rc
-    steps:
-      - IN: manifest-job
-      - IN: version-resource
+      - TASK:
+          script:
+            - echo "This is job B"
+            - |
+              echo "starting TEST"
+              sleep 10
+              touch hello.txt
+              echo "hello" >> hello.txt
+              echo "world" >> hello.txt
+              echo "So here is the file that we created"; cat hello.txt
+              echo "thanks"
+            - echo "other script"
+            - echo "some other script 1"
 
+        
+  - name: sample-job-B
+    type: runSh
+    steps:
+      - TASK:
+          script:
+            - echo "This is job B"
+            - echo "This is some more script"
