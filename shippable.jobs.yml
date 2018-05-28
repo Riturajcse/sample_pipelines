@@ -7,8 +7,9 @@ jobs:
             - echo "This is job B"
             - |
               echo "starting TEST"
-              sleep 10
+              echo "So here is the file that we created123"
               echo "So here is the file that we created"
+              echo "So here is the file that we created321"
               echo "thanks"
             - echo "other script"
             - echo "some other script 1"
