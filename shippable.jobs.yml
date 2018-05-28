@@ -8,10 +8,7 @@ jobs:
             - |
               echo "starting TEST"
               sleep 10
-              touch hello.txt
-              echo "hello" >> hello.txt
-              echo "world" >> hello.txt
-              echo "So here is the file that we created"; cat hello.txt
+              echo "So here is the file that we created"
               echo "thanks"
             - echo "other script"
             - echo "some other script 1"
