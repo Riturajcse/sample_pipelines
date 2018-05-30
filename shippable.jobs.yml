@@ -2,6 +2,12 @@ templates: &template-script
   - echo "common-script line 1"
   - echo "common-script line 1"
   - echo "common-script line 1"
+  - |
+    echo "starting TEST"
+    echo "So here is the file that we created123"
+    echo "So here is the file that we created"
+    echo "So here is the file that we created321"
+    echo "thanks"
 
 jobs:
   - name: sample-job-A
