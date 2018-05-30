@@ -9,8 +9,7 @@ templates: &template-script
   - >
     echo "hello";
     echo "hi"
-  - |
-    echo "hello" \
+  - echo "hello" \
     "world"
 
 jobs:
