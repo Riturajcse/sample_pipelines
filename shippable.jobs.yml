@@ -5,9 +5,10 @@ templates: &template-script
   - |
     echo "starting TEST"
     echo "So here is the file that we created123"
-    echo "So here is the file that we created"
-    echo "So here is the file that we created321"
-    echo "thanks"
+  - echo "hello this" \
+  - >
+    echo "hello";
+    echo "hi"
 
 jobs:
   - name: sample-job-A
