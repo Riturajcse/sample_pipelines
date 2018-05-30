@@ -5,7 +5,7 @@ templates: &template-script
   - |
     echo "starting TEST"
     echo "So here is the file that we created123"
-  - echo "hello this" \
+  - echo "hello this"
   - >
     echo "hello";
     echo "hi"
