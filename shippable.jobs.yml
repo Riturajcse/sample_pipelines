@@ -1,26 +1,46 @@
-templates: &template-script-1
+templates-1: &template-script 
   - echo "common-script line 1"
   - echo "common-script line 2"
-  - echo "common-script line 3"
 
-templates1: &template-script-2
+templates-2: &template-script-onStart
   - echo "common-script line 1"
   - echo "common-script line 2"
-  - echo "common-script line 3"
+
+templates-3: &template-script-onCancel
+  - echo "common-script line 1"
+  - echo "common-script line 2"
+
+templates-4: &template-script-onFailure
+  - echo "common-script line 1"
+  - echo "common-script line 2"
+
+templates-5: &template-script-always
+  - echo "common-script line 1"
+  - echo "common-script line 2"
+
 
 jobs:
   - name: sample-job-A
     type: runSh
+    on_success:
+      script:
+        - echo "SUCCESS"
+        - *template-script-onStart
+    on_failure:
+      script:
+        - echo "FAILED"
+        - *template-script-onFailure
+    always:
+      script:
+        - echo "ALWAYS"
+        - *template-script-always
+    on_cancel:
+      script:
+        - echo "CANCEL"
+        - *template-script-onCancel
     steps:
       - TASK:
-          name: TASK-1
           script:
             - echo "This is job A"
-            - *template-script-1
-            - echo "This is some more script"
-      - TASK:
-          name: TASK-2
-          script:
-            - echo "This is job A"
-            - *template-script-2
+            - *template-script
             - echo "This is some more script"
