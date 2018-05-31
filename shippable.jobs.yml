@@ -48,6 +48,7 @@ jobs:
         - *template-script-onCancel
     steps:
       - TASK:
-          - script: echo "This is job A"
-          - script: *template-script
-          - script: echo "This is some more script"
+          #- script: echo "This is job A"
+          script:
+            - *template-script
+          #- script: echo "This is some more script"
