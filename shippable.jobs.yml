@@ -3,7 +3,7 @@ templates: &template-script-1
   - echo "common-script line 2"
   - echo "common-script line 3"
 
-templates: &template-script-2
+templates1: &template-script-2
   - echo "common-script line 1"
   - echo "common-script line 2"
   - echo "common-script line 3"
