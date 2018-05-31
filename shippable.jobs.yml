@@ -1,14 +1,26 @@
-templates: &template-script 
+templates: &template-script-1
   - echo "common-script line 1"
+  - echo "common-script line 2"
+  - echo "common-script line 3"
+
+templates: &template-script-2
   - echo "common-script line 1"
-  - echo "common-script line 1"
+  - echo "common-script line 2"
+  - echo "common-script line 3"
 
 jobs:
   - name: sample-job-A
     type: runSh
     steps:
       - TASK:
+          name: TASK-1
           script:
             - echo "This is job A"
-            - *template-script
+            - *template-script-1
+            - echo "This is some more script"
+      - TASK:
+          name: TASK-2
+          script:
+            - echo "This is job A"
+            - *template-script-2
             - echo "This is some more script"
