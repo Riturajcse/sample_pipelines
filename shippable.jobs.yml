@@ -2,7 +2,7 @@ templates-1: &template-script
   - echo "common-script line 1"
   - echo "common-script line 2"
 
-templates-2: &template-script-onStart
+templates-2: &template-script-onSuccess
   - echo "common-script line 1"
   - echo "common-script line 2"
 
@@ -18,14 +18,22 @@ templates-5: &template-script-always
   - echo "common-script line 1"
   - echo "common-script line 2"
 
+templates-6: &template-script-onStart
+  - echo "common-script line 1"
+  - echo "common-script line 2"
+
 
 jobs:
   - name: sample-job-A
     type: runSh
+    on_start:
+      script:
+        - echo "START"
+        - *template-script-onStart
     on_success:
       script:
         - echo "SUCCESS"
-        - *template-script-onStart
+        - *template-script-onSuccess
     on_failure:
       script:
         - echo "FAILED"
