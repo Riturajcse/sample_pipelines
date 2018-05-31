@@ -3,24 +3,24 @@ templates-1: &template-script
   - echo "common-script line 2"
 
 templates-2: &template-script-onSuccess
-  - echo "common-script line 1"
-  - echo "common-script line 2"
+  - echo "common-script line 3"
+  - echo "common-script line 4"
 
 templates-3: &template-script-onCancel
-  - echo "common-script line 1"
-  - echo "common-script line 2"
+  - echo "common-script line 5"
+  - echo "common-script line 6"
 
 templates-4: &template-script-onFailure
-  - echo "common-script line 1"
-  - echo "common-script line 2"
+  - echo "common-script line 7"
+  - echo "common-script line 8"
 
 templates-5: &template-script-always
-  - echo "common-script line 1"
-  - echo "common-script line 2"
+  - echo "common-script line 9"
+  - echo "common-script line 10"
 
 templates-6: &template-script-onStart
-  - echo "common-script line 1"
-  - echo "common-script line 2"
+  - echo "common-script line 11"
+  - echo "common-script line 12"
 
 
 jobs:
