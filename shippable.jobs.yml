@@ -50,6 +50,6 @@ jobs:
       - TASK:
           script:
             - echo "This is job A"
-            - sleep 100
+            - sleep 10
             - *template-script
             - echo "This is some more script"
