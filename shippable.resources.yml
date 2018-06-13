@@ -15,11 +15,12 @@ vars:
   integration: aws_int
 
 resources:
-  - name: box-nginx-1-1
+  - name: box-nginx-1-1-shipctl
     type: image
     integration: dockerhub
     versionTemplate:
-      sourceName: "library/redis"
+      region: ${region}
+      sourceName: ${sourceName}
       isPull: false
       versionName: latest
   
