@@ -2,6 +2,7 @@ vars:
   region: us-west-2   
   sourceName: aws_default_cluster
   integration: aws_int
+  SHIPPABLE_API_TOKEN: 1234
 
 jobs:
   - name: sample-job-A
