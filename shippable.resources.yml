@@ -18,13 +18,13 @@ resources:
   - name: box-nginx-1-1
     type: image
     integration: dockerhub
-    versionTemplate:
+    pointer:
       sourceName: "library/nginx"
       isPull: false
   
   - name: box-nginx-1-2
     type: image
     integration: dockerhub
-    versionTemplate:
+    pointer:
       sourceName: "library/redis"
       isPull: false
