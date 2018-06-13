@@ -1,15 +1,4 @@
 vars:
-  branches:
-    master: 
-      region: us-east-1
-      sourceName: aws_prod_cluster
-      integration: aws_prod_int
-    rc: 
-      region: us-west-2
-      sourceName: aws_rc_cluster
-      integration: aws_rc_int
-   
-  #these are the default values which will be used if branch is not specified
   region: us-west-2   
   sourceName: aws_default_cluster
   integration: aws_int
@@ -21,6 +10,7 @@ jobs:
       - TASK:
           script:
             - echo "This is job B"
+            - echo "SHIPPABLE_API_TOKEN: ${SHIPPABLE_API_TOKEN}" 
         
   - name: sample-job-B
     type: runSh
