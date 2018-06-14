@@ -11,5 +11,6 @@ jobs:
       - TASK:
           script:
             - echo "This is job A"
-            #- echo "SHIPPABLE_API_TOKEN- ${SHIPPABLE_API_TOKEN}" 
+            - test="hello"
+            - echo ${test}" 
         
