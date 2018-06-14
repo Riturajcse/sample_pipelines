@@ -1,21 +1,18 @@
-vars:
-  region: us-west-2   
-  sourceName: aws_default_cluster
-  integration: ship_int
+
 
 resources:
   - name: sample_resource
     type: image
-    integration: ${integration}
+    integration: ship_int
     versionTemplate:
-      region: ${region}
-      sourceName: ${sourceName}
+      region: us-east-2
+      sourceName: aws-cluster
       versionName: latest
 
   - name: sample_resource_2
     type: image
-    integration: ${integration}
+    integration: ship_int
     versionTemplate:
-      region: ${region}
-      sourceName: ${sourceName}
+      region: us-east-2
+      sourceName: aws-cluster
       versionName: latest
