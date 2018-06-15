@@ -13,5 +13,5 @@ jobs:
           script:
             - echo "This is job A"
             - test="hello"
-            - echo ${test}" 
+            - echo ${test}
         
