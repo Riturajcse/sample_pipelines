@@ -1,6 +1,6 @@
 vars:
-  region: us-west-2   
-  sourceName: aws_default_cluster
+  - "region: us-west-2"   
+  "sourceName:" aws_default_cluster
   integration: ship_int
 
 resources:
