@@ -1,5 +1,5 @@
 vars:
-  region: us-west-2   
+  region: us-west-fake   
   sourceName: aws_default_cluster
   integration: aws_int
   type: runSh
@@ -7,6 +7,7 @@ vars:
 jobs:
   - name: sample-job-A
     type: ${type}
+    region: ${region}
     steps:
       - TASK:
           script:
