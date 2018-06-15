@@ -1,6 +1,12 @@
+vars:
+  region: us-west-2   
+  sourceName: aws_default_cluster
+  integration: ship_int
+  type: trigger
+
 triggers:
   - name: trigger-dv-man-1
-    type: trigger
+    type: ${type}
     version:
       counter: 64412345
       
