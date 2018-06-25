@@ -29,7 +29,8 @@ jobs:
             - echo "This is job B"
             - *template-script
             - echo "This is some more script"
-            
+          
+resources:  
   - name: sample_git_repo
     type: gitRepo
     integration: github
