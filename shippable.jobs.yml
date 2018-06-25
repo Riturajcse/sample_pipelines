@@ -29,3 +29,9 @@ jobs:
             - echo "This is job B"
             - *template-script
             - echo "This is some more script"
+            
+  - name: sample_git_repo
+    type: gitRepo
+    integration: github
+    versionTemplate:
+      sourceName: Riturajcse/sample_nodejs
