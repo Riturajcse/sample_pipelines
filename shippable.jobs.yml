@@ -24,6 +24,7 @@ jobs:
   - name: sample-job-B
     type: runSh
     steps:
+      - IN: sample_git_repo
       - TASK:
           script:
             - echo "This is job B"
