@@ -3,4 +3,4 @@ jobs:
     type: manifest
     steps:
       - IN: box-nginx-1
-        branch: rc
+        branch: master
