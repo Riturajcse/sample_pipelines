@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
       - IN: box-nginx-1
-        branch: master
+        branch: rc
       - IN: box-nginx-1-1
     flags:
       - flg1
