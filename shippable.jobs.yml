@@ -19,7 +19,7 @@ jobs:
       - TASK:
           script:
             - *template-script
-            - echo "This is job B"
+            - echo "This is job B1"
         
   - name: sample-job-B
     type: runSh
