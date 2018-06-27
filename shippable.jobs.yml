@@ -6,4 +6,4 @@ jobs:
         branch: rc
       - IN: box-nginx-1-1
     flags:
-      - flg11
+      - flg1
