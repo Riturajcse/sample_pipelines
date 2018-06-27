@@ -2,7 +2,8 @@ jobs:
   - name: rituraj-1-1
     type: manifest
     steps:
-      - IN: box-nginx-1-1-1
+      - IN: box-nginx-1
+        branch: master
       - IN: box-nginx-1-1
     flags:
       - flg1
