@@ -2,5 +2,5 @@ jobs:
   - name: sample-job-1
     type: manifest
     steps:
-      - IN: box-nginx-1
+      - IN: rituraj-1-1
         branch: master
