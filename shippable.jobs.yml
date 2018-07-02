@@ -12,8 +12,8 @@ templates2: &template-script-2
     echo "multiline common-script line 2"
 
 templates:
-  - temp1.yml <complete git public http url>
-  - temp2.yml <complete git public http url>
+  - https://github.com/ritutajTest/sample_php/blob/master/temp1.yml
+  - https://github.com/ritutajTest/sample_php/blob/master/temp2.yml
 
 jobs:
   - name: sample-job-A
