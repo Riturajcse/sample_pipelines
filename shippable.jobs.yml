@@ -1,8 +1,27 @@
+templates1: &template-script -1
+  - echo "common-script line 1"
+  - echo "common-script line 1"
+  - echo "common-script line 1"
+
+templates2: &template-script-2 
+  - echo "common-script line 1"
+  - echo "common-script line 2"
+  - echo "common-script line 3"
+  - |
+    echo "multiline common-script line 1"
+    echo "multiline common-script line 2"
+
+templates:
+  - temp1.yml <complete git public http url>
+  - temp2.yml <complete git public http url>
+
 jobs:
-  - name: rituraj-1-1
-    type: manifest
+  - name: sample-job-A
+    type: runSh
     steps:
-      - IN: box-nginx-1-1-1
-      - IN: box-nginx-1-1
-    flags:
-      - flg1
+      - TASK:
+          script:
+            - echo "This is job A"
+            - *template-script-1
+            - *template-script-3
+            - echo "This is some more script"
