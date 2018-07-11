@@ -11,10 +11,6 @@ templates2: &template-script-2
     echo "multiline common-script line 1"
     echo "multiline common-script line 2"
 
-templates:
-  - https://github.com/ritutajTest/sample_php/blob/master/temp1.yml
-  - https://github.com/ritutajTest/sample_php/blob/master/temp2.yml
-
 jobs:
   - name: sample-job-A
     type: runSh
@@ -23,5 +19,5 @@ jobs:
           script:
             - echo "This is job A"
             - *template-script-1
-            - *template-script-3
+            - *template-script-2
             - echo "This is some more script"
