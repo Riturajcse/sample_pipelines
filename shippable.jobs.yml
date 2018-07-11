@@ -2,5 +2,5 @@ jobs:
   - name: sample-job-1
     type: manifest
     steps:
-      - IN: rituraj-1-1
+      - IN: test_vars
         branch: master
