@@ -1,3 +1,6 @@
+templates3: &template-script-x
+  - echo "common-script x"
+  - echo "common-script y"
 
 jobs:
   - name: sample-job-A
@@ -6,6 +9,7 @@ jobs:
       - TASK:
           script:
             - echo "This is job A"
-            - *template-script-1
-            - *template-script-2
+            #- *template-script-1
+            #- *template-script-2
+            - *template-script-x
             - echo "This is some more script"
