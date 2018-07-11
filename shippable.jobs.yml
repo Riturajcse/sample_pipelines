@@ -1,4 +1,4 @@
-templates3: &template-script-x
+templatesx: &template-script-x
   - echo "common-script x"
   - echo "common-script y"
 
