@@ -1,15 +1,3 @@
-templates1: &template-script-1
-  - echo "common-script line 1"
-  - echo "common-script line 1"
-  - echo "common-script line 1"
-
-templates2: &template-script-2 
-  - echo "common-script line 1"
-  - echo "common-script line 2"
-  - echo "common-script line 3"
-  - |
-    echo "multiline common-script line 1"
-    echo "multiline common-script line 2"
 
 jobs:
   - name: sample-job-A
