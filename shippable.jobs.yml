@@ -8,4 +8,4 @@ jobs:
     steps:
       - TASK:
         - script: *template-script-x
-        - script: echo "This is some more script1"
+        - script: echo "This is some more script123"
