@@ -7,10 +7,5 @@ jobs:
     type: runSh
     steps:
       - TASK:
-          script:
-            - echo "This is job A"
-            - *template-script-1
-            - *template-script-2
-            - *template-script-5
-            - *template-script-x
-            - echo "This is some more script"
+        #- script: *template-script-x
+        - script: echo "This is some more script"
