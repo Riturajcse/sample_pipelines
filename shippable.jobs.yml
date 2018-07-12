@@ -14,6 +14,6 @@ jobs:
     type: runSh
     steps:
       - TASK:
-        - script:
+        script:
           - *template-script-x
           - echo "This is some more script123"
