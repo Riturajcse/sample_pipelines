@@ -3,7 +3,7 @@ templatesx: &template-script-x
   - echo "common-script y"
 
 jobs:
-  - name: sample-job-A
+  - name: sample-job-B
     type: runSh
     steps:
       - TASK:
