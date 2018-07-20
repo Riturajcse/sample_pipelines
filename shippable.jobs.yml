@@ -19,7 +19,8 @@ jobs:
     on_success:
       script:
         - echo "SUCCESS here"
-      NOTIFY: slack
+      NOTIFY:
+        - name: slack
         
         
   - name: new_job_2
