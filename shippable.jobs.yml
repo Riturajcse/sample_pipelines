@@ -4,7 +4,7 @@ jobs:
     steps:
       - TASK:
           runtime:
-            options:
+            - options:
               #env:
                 #- test: hello
           script:
