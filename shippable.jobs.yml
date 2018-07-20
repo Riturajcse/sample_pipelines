@@ -3,9 +3,9 @@ jobs:
     type: runSh
     steps:
       - TASK:
-          runtime:
-            options:
-              env:
-                - test:hello
-        #script:
-          #- - echo "This is job ZZ"
+          #runtime:
+            #options:
+              #env:
+                #- test:hello
+          script:
+            - echo "This is job ZZ"
