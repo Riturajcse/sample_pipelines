@@ -3,5 +3,5 @@ jobs:
     type: runSh
     steps:
       - TASK:
-        - - hello: echo "This is some more script123"
-        #- script: echo "This is some more script456"
+        script:
+          - - echo "This is some more script123"
