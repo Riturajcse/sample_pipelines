@@ -5,7 +5,7 @@ jobs:
       - TASK:
           runtime:
             options:
-              imageName: drydock/u16all
+              imageName:
               imageTag: v6.6.4
               #env:
                 #- test: hello
