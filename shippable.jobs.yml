@@ -11,12 +11,6 @@ jobs:
     steps:
       - IN: box-nginx-1-1-1
       - TASK:
-          runtime:
-            options:
-              #imageName: drydock/u16all
-              #imageTag: v6.6.4
-              env:
-                - test: hello
           script:
             echo "This is job ZZ"
             
