@@ -6,8 +6,8 @@ jobs:
       container: true 
       #timeoutMinutes: time
     on_start:
-      - NOTIFY:
-        - name: slack
+      NOTIFY:
+        #- name: slack
     steps:
       - TASK:
           runtime:
