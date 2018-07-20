@@ -1,5 +1,5 @@
 jobs:
-  - name: sample-job-A
+  - name: sample-job-X
     type: runSh
     steps:
       - TASK:
