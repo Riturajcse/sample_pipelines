@@ -4,7 +4,7 @@ jobs:
     runtime:
       nodePool: default_cluster
       container: true 
-      timeoutMinutes: time
+      #timeoutMinutes: time
     steps:
       - TASK:
           runtime:
@@ -16,9 +16,10 @@ jobs:
           script:
             - echo "This is job ZZ"
             
-    #on_success:
-      #- - script1: echo "haha"
-        #- echo "SUCCESS here"
+    on_success:
+      script:
+        - echo "SUCCESS here"
+      NOTIFY: slack
         
         
   - name: new_job_2
