@@ -20,7 +20,7 @@ jobs:
       script:
         - echo "SUCCESS here"
       NOTIFY:
-        - name: slack
+        - name: slack1
         
         
   - name: new_job_2
