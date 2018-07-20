@@ -4,8 +4,8 @@ jobs:
     steps:
       - TASK:
           runtime:
-            options:
-              env:
-                - test: hello
+            #options:
+              #env:
+                #- test: hello
           script:
             - echo "This is job ZZ"
