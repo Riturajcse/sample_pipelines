@@ -2,7 +2,7 @@ jobs:
   - name: sample-job-ZZ
     type: runSh
     runtime:
-      nodePool: default_cluster
+      nodePool: default_cluster1
       container: true 
       #timeoutMinutes: 30
     steps:
