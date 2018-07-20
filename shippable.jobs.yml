@@ -14,4 +14,4 @@ jobs:
             
     on_success:
       script:
-        - echo "SUCCESS here"
+        #- echo "SUCCESS here"
