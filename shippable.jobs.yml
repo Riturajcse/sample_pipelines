@@ -1,8 +1,8 @@
 jobs:
-  - name: sample-job-X
+  - name: test_job
     type: runSh
     steps:
       - TASK:
         script:
-          - - |
+          - |
             echo hi
