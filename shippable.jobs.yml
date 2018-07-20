@@ -6,6 +6,6 @@ jobs:
           runtime:
             options:
               env:
-                - test: hello
+                - hello
           script:
             - echo "This is job ZZ"
