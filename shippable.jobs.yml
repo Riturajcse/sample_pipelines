@@ -1,6 +1,6 @@
 jobs:
   - name: sample-job-ZZ
-    type: runSh1
+    type: runSh
     steps:
       - TASK:
           runtime:
