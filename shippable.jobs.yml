@@ -9,8 +9,8 @@ jobs:
               #imageTag: v6.6.4
               env:
                 - test: hello
-        script:
-          - echo "This is job ZZ"
+          script:
+            - echo "This is job ZZ"
             
     #on_success:
       #- - script1: echo "haha"
