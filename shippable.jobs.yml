@@ -13,7 +13,8 @@ jobs:
       - TASK:
           script:
             - echo "This is job ZZ"
-              - echo "hello world"
+            - |
+              - echo "hello"
             
     on_success:
       #script:
