@@ -9,6 +9,7 @@ jobs:
       NOTIFY:
         #- name: slack
     steps:
+      - IN: slack
       - TASK:
           runtime:
             options:
