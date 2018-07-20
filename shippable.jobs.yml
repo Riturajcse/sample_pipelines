@@ -11,3 +11,7 @@ jobs:
                 #- test: hello
           script:
             - echo "This is job ZZ"
+            
+      on_success:
+      script:
+        - echo "SUCCESS here"
