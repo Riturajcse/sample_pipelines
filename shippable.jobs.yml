@@ -3,9 +3,9 @@ jobs:
     type: runSh
     steps:
       - TASK:
-          runtime:
-            options:
-              - imageName: drydock/u16all
+          #runtime:
+            #options:
+              #imageName: drydock/u16all
               #imageTag: v6.6.4
               #env:
                 #- test: hello
