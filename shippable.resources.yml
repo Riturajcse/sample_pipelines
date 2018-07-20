@@ -23,6 +23,6 @@ resources:
     type: notification
     integration: slack
     versionTemplate:
-    recipients:
-      - "#beta"
+      recipients:
+        - "#beta"
   
