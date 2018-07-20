@@ -6,9 +6,7 @@ jobs:
       container: true 
       #timeoutMinutes: time
     on_start:
-      script:
-        - echo "START here"
-      NOTIFY:
+      - NOTIFY:
         - name: slack
     steps:
       - TASK:
