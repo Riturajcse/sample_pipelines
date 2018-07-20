@@ -12,6 +12,6 @@ jobs:
           script:
             - echo "This is job ZZ"
             
-      on_success:
+    on_success:
       script:
         - echo "SUCCESS here"
