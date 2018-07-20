@@ -18,3 +18,11 @@ resources:
       isPull: false
     seed:
       versionName: latest
+      
+  - name: slack
+    type: notification
+    integration: slack
+    versionTemplate:
+    recipients:
+      - "#beta"
+  
