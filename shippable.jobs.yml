@@ -17,10 +17,10 @@ jobs:
             - echo "This is job ZZ"
             
     on_success:
-      script:
-        - echo "SUCCESS here"
+      #script:
+        #- echo "SUCCESS here"
       NOTIFY:
-        #- name: slack
+        name: slack
         
         
   - name: new_job_2
