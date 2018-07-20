@@ -10,4 +10,4 @@ jobs:
               #env:
                 #- test: hello
           script:
-            #- echo "This is job ZZ"
+            - echo "This is job ZZ"
