@@ -13,5 +13,5 @@ jobs:
             - echo "This is job ZZ"
             
     on_success:
-      - script: echo "haha"
+      - script1: echo "haha"
         #- echo "SUCCESS here"
