@@ -4,4 +4,4 @@ jobs:
     steps:
       - TASK:
           script:
-            - echo "This is job ZZ"
+            - - echo "This is job ZZ"
