@@ -7,5 +7,5 @@ jobs:
             options:
               env:
                 - test:hello
-        script:
-          - - echo "This is job ZZ"
+        #script:
+          #- - echo "This is job ZZ"
