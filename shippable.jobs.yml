@@ -9,5 +9,5 @@ jobs:
               #imageTag: v6.6.4
               #env:
                 #- test: hello
-          - script:
+          script1:
             #- echo "This is job ZZ"
