@@ -1,7 +1,7 @@
 jobs:
-  - name: sample-job-Z
+  - name: sample-job-ZZ
     type: runSh
     steps:
       - TASK:
-        script:
-          - echo "This is some more script123"
+          script:
+            - echo "This is job ZZ"
