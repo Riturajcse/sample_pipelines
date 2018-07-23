@@ -13,8 +13,8 @@ jobs:
               nodepool: default_cluster
               container: true
               timeoutMinutes: 20
-            #script:
-                #- echo "hello world"
+            script:
+                - echo "hello world"
         - TASK:
            name: t2
            runtime:
@@ -43,14 +43,14 @@ jobs:
             - echo "This is job C"
             - *template-script-x
 
-  #- name: new_job_2
-    #type: runSh
-    #steps:
-    #- TASK:
-        #runtime:
-          #options:
-            #env:
-            #- test: test
-      #script:
-      #- - |
-          #echo hi 
+  - name: new_job_2
+    type: runSh
+    steps:
+    - TASK:
+        runtime:
+          options:
+            env:
+            - test: test
+      script:
+      - - |
+          echo hi 
