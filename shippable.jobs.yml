@@ -19,7 +19,7 @@ jobs:
                     - hello: 1234563
                     #- hello12Ge
             script:
-                echo "hello world"
+                - echo "hello world"
                 #echo "hello world1"
                 #- echo "hello world2"
             
@@ -39,14 +39,14 @@ jobs:
             - echo "This is job C"
             - *template-script-x
 
-  #- name: new_job_2
-    #type: runSh
-    #steps:
-    #- TASK:
-        #runtime:
-          #options:
-            #env:
-            #- test: test
-      #script:
-      #- - |
-          #echo hi 
+  - name: new_job_2
+    type: runSh
+    steps:
+    - TASK:
+        runtime:
+          options:
+            env:
+            - test: test
+      script:
+      - - |
+          echo hi 
