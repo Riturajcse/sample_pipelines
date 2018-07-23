@@ -6,7 +6,10 @@ jobs:
             runtime:
                options:
                   env:
-                    - hello: G
+                    - hello: Ge
+                    - helloGe
+                    - hello: 123
+                    - hello12Ge
             script:
                 - echo "hello world"
             
