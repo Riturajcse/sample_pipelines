@@ -21,7 +21,9 @@ jobs:
             nodepool: default_cluster
             container: true
             timeoutMinutes: 20
-            options: hello
+            options:
+              env:
+                - hellod:ss
             script:
                - echo "hello world t2"
             
