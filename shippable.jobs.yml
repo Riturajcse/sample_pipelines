@@ -13,7 +13,7 @@ jobs:
     steps:
         - TASK:
             script:
-                echo "hello world"
+                - echo "hello world"
             
         
   - name: sample-job-B
