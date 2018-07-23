@@ -21,8 +21,8 @@ jobs:
             nodepool: default_cluster
             container: true
             timeoutMinutes: 20
-           script:
-               echo "hello world t2"
+           #script:
+               #- echo "hello world t2"
             
         
   - name: sample-job-B
