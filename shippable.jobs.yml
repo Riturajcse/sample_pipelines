@@ -4,8 +4,7 @@ jobs:
     steps:
         - TASK:
             runtime:
-               nodepool: 
-                 - default_cluster
+               nodepool: default_cluster
                container: true
                options:
                   env:
