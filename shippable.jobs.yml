@@ -19,8 +19,7 @@ jobs:
     steps:
         - TASK:
             script:
-                - echo "$hello"
-                - echo "hello world"
+                echo "hello world"
             
         
   - name: sample-job-B
@@ -30,13 +29,13 @@ jobs:
         #- script: *template-script-x
         - script: echo "This is some more script123"
         
-  #- name: sample-job-C
-    #type: runSh
-    #steps:
-      #- TASK:
-          #script:
-            #- echo "This is job C"
-            #- *template-script-x
+  - name: sample-job-C
+    type: runSh
+    steps:
+      - TASK:
+          script:
+            - echo "This is job C"
+            - *template-script-x
 
   #- name: new_job_2
     #type: runSh
