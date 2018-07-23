@@ -15,11 +15,11 @@ jobs:
                options:
                   env:
                     - hello: Ge
-                    - helloGe
+                    #- helloGe
                     - hello: 1234563
-                    - hello12Ge
-            script:
-                - echo "hello world"
+                    #- hello12Ge
+            #script:
+                #- echo "hello world"
                 #echo "hello world1"
                 #- echo "hello world2"
             
