@@ -6,7 +6,7 @@ jobs:
             runtime:
                options:
                   env:
-                    - hello
+                    - helloG
             script:
                 - echo "hello world"
             
