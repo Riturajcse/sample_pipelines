@@ -19,8 +19,6 @@ jobs:
            name: t2
            script:
                - echo "hello world t2"
-        - TASK:
-           - script: echo "This is some more script123"
             
         
   - name: sample-job-B
