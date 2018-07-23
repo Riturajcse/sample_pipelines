@@ -12,8 +12,11 @@ jobs:
       timeoutMinutes: 20
     steps:
         - TASK:
+            #script:
+                #- echo "hello world"
+         - TASK:
             script:
-                - echo "hello world"
+                - echo "hello world t2"
             
         
   - name: sample-job-B
