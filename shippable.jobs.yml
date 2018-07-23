@@ -8,21 +8,21 @@ jobs:
     type: runSh
     steps:
         - TASK:
-            name: t1
-            runtime:
-              nodepool: default_cluster
-              container: true
-              timeoutMinutes: 20
-            script:
-                - echo "hello world"
+          name: t1
+          runtime:
+            nodepool: default_cluster
+            container: true
+            timeoutMinutes: 20
+          script:
+            - echo "hello world t1"
         - TASK:
-           name: t2
-             runtime:
-              nodepool: default_cluster
-              container: true
-              timeoutMinutes: 20
-           script:
-               - echo "hello world t2"
+          name: t2
+          runtime:
+            nodepool: default_cluster
+            container: true
+            timeoutMinutes: 20
+          script:
+            - echo "hello world t2"
             
         
   - name: sample-job-B
