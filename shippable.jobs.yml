@@ -14,7 +14,7 @@ jobs:
       options:
         env:
           - hello: Ge
-          #- helloGe
+          - helloGe
           - hello: 1234563
           #- hello12Ge
     steps:
