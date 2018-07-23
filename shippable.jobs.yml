@@ -13,8 +13,7 @@ jobs:
                     #- helloGe
                     - hello: 1234563
                     #- hello12Ge
-            script:
-                - echo "hello world"
+            - script: echo "hello world"
                 #echo "hello world1"
                 #- echo "hello world2"
             
