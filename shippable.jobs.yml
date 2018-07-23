@@ -5,7 +5,7 @@ jobs:
         - TASK:
             runtime:
                nodepool: default_cluster
-               container: hello
+               container: true
                options:
                   env:
                     - hello: Ge
