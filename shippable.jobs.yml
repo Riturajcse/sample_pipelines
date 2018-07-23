@@ -11,7 +11,7 @@ jobs:
             runtime:
                nodepool: default_cluster
                container: true
-               timeoutMinutes: twenty
+               timeoutMinutes: 20
                options:
                   env:
                     - hello: Ge
@@ -19,7 +19,7 @@ jobs:
                     - hello: 1234563
                     #- hello12Ge
             script:
-                - echo "hello world"
+                echo "hello world"
                 #echo "hello world1"
                 #- echo "hello world2"
             
