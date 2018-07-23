@@ -26,7 +26,7 @@ jobs:
               env:
                 - hellod: ss1
            script:
-              - echo "hello world t2"
+               - echo "hello world t2"
             
         
   - name: sample-job-B
