@@ -20,8 +20,6 @@ jobs:
            script:
                - echo "hello world t2"
         - TASK:
-           name: oldScript
-         #- script: *template-script-x
            - script: echo "This is some more script123"
             
         
