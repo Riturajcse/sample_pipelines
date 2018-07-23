@@ -6,7 +6,7 @@ jobs:
             runtime:
                nodepool: default_cluster
                container: true
-               timeoutMinutes: twentyone
+               timeoutMinutes: 21
                options:
                   env:
                     - hello: Ge
