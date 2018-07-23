@@ -17,8 +17,12 @@ jobs:
                 - echo "hello world"
         - TASK:
            name: t2
-           #script:
-               #- echo "hello world t2"
+           script:
+               - echo "hello world t2"
+        - TASK:
+           name: oldScript
+         #- script: *template-script-x
+           - script: echo "This is some more script123"
             
         
   - name: sample-job-B
