@@ -11,8 +11,8 @@ jobs:
             name: t1
             runtime:
               nodepool: default_cluster
-              container: true1
-              timeoutMinutes: twenty
+              container: true
+              timeoutMinutes: 20
             script:
                 - echo "hello world"
         - TASK:
