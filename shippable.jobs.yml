@@ -12,7 +12,7 @@ jobs:
             runtime:
               nodepool: default_cluster
               container: true
-              timeoutMinutes: TWEN
+              timeoutMinutes: 20
             script:
                 - echo "hello world"
         - TASK:
