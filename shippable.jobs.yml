@@ -2,10 +2,13 @@ jobs:
   - name: sample-job-ZZ
     type: runSh
     steps:
-      - IN: box-nginx-1-1-1
-      - TASK:
-          script:
-            - echo "This is job: ZZ"
+        - TASK:
+            runtime:
+               options:
+                  env:
+                    - hello="bar"
+            script:
+                - echo "hello world" 
             
         
         
