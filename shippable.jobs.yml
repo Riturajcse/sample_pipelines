@@ -6,9 +6,7 @@ jobs:
             runtime:
                options:
                   env:
-                    - hello: "bar"
-            script:
-                - echo "hello world" 
+                    - test:hello
             
         
         
