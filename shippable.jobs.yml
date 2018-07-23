@@ -11,7 +11,7 @@ jobs:
                   env:
                     - hello: Ge
                     #- helloGe
-                    - hello: 1234
+                    - hello: 12345
                     #- hello12Ge
             script:
                 echo "hello world"
