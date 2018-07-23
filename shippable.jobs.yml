@@ -1,9 +1,9 @@
 jobs:
   - name: sample-job-ZZ
     type: runSh
-    runtime:
-      nodePool: default_cluster
-      container: true 
+    #runtime:
+      3nodePool: default_cluster
+      #container: true 
       #timeoutMinutes: time
     on_start:
       NOTIFY:
