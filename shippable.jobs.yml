@@ -8,8 +8,8 @@ jobs:
     type: runSh
     runtime:
       nodepool: default_cluster
-      container: true12
-      timeoutMinutes: 20
+      container: true
+      timeoutMinutes: te
       options:
         env:
           - hello: Ge
