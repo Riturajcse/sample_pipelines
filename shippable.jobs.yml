@@ -30,6 +30,15 @@ jobs:
       - TASK:
         - script: *template-script-x
         - script: echo "This is some more script123"
+        
+  - name: sample-job-C
+    type: runSh
+    steps:
+      - TASK:
+          script:
+            - echo "This is job C"
+            - *template-script-x
+
   #- name: new_job_2
     #type: runSh
     #steps:
