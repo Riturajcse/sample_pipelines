@@ -14,7 +14,7 @@ jobs:
                     - hello: 123456
                     #- hello12Ge
             script:
-                - echo "hello world"
+                echo "hello world"
             
         
         
