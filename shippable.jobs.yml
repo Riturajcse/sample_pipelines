@@ -12,14 +12,14 @@ jobs:
             
         
         
-  - name: new_job_2
-    type: runSh
-    steps:
-    - TASK:
-        runtime:
-          options:
-            env:
-            - test: test
-      script:
-      - - |
-          echo hi 
+  #- name: new_job_2
+    #type: runSh
+    #steps:
+    #- TASK:
+        #runtime:
+          #options:
+            #env:
+            #- test: test
+      #script:
+      #- - |
+          #echo hi 
