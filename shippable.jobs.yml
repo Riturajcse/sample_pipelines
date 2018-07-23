@@ -7,8 +7,7 @@ jobs:
   - name: sample-job-ZZ
     type: runSh
     runtime:
-      nodepool:
-        - default_cluster
+      nodepool: default_cluster
       container: true
       timeoutMinutes: tee
       options:
