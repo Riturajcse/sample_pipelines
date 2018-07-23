@@ -4,12 +4,14 @@ jobs:
     steps:
         - TASK:
             runtime:
+               nodepool: default_cluster
+               container: hello
                options:
                   env:
                     - hello: Ge
-                    - helloGe
+                    #- helloGe
                     - hello: 123
-                    - hello12Ge
+                    #- hello12Ge
             script:
                 - echo "hello world"
             
