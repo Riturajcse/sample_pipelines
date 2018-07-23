@@ -8,7 +8,7 @@ jobs:
     type: runSh
     runtime:
       nodepool: default_cluster
-      container: true
+      container: true12
       timeoutMinutes: 20
       options:
         env:
