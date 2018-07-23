@@ -10,12 +10,6 @@ jobs:
       nodepool: default_cluster
       container: true
       timeoutMinutes: 20
-      options:
-        env:
-          - hello: Ge
-          - helloGe
-          #- hello: 1234563
-          #- hello12Ge
     steps:
         - TASK:
             script:
