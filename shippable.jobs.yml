@@ -9,10 +9,9 @@ jobs:
     steps:
         - TASK:
             runtime:
-               nodepool:
-                 - default_cluster
+               nodepool: default_cluster
                container: true
-               timeoutMinutes: 24
+               timeoutMinutes: twenty
                options:
                   env:
                     - hello: Ge
