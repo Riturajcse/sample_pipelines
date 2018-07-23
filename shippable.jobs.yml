@@ -1,24 +1,12 @@
 jobs:
   - name: sample-job-ZZ
     type: runSh
-    #runtime:
-      #nodePool: default_cluster
-      #container: true 
-      #timeoutMinutes: time
-    on_start:
-      NOTIFY:
-        #- name: slack
     steps:
       - IN: box-nginx-1-1-1
       - TASK:
           script:
             - echo "This is job: ZZ"
             
-    on_success:
-      #script:
-        #- echo "SUCCESS here"
-      NOTIFY:
-        - name: slack
         
         
   - name: new_job_2
