@@ -18,8 +18,7 @@ jobs:
         - TASK:
            name: t2
            runtime:
-            nodepool:
-              - default_cluster
+            nodepool: default_cluster
             container: true
             timeoutMinutes: 20
             options:
