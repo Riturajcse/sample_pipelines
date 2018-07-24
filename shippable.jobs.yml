@@ -18,7 +18,7 @@ jobs:
               #timeoutMinutes: 20
               #options: hello
             script:
-                - echo "hello: world11"
+                - echo "hello world11"
         - TASK:
            name: t2
            runtime:
@@ -37,7 +37,7 @@ jobs:
     steps:
       - TASK:
         #- script: *template-script-x
-        - script: echo "This is some more script123"
+        - script: echo "This: is some more script123"
         
   - name: sample-job-C
     type: runSh
