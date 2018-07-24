@@ -10,8 +10,7 @@ jobs:
         - TASK:
             name: t1
             runtime:
-              nodepool:
-                - default_cluster
+              nodepool: default_cluster
               container: true
               timeoutMinutes: 20
             script:
@@ -21,7 +20,7 @@ jobs:
            runtime:
             nodepool: default_cluster
             container: true
-            timeoutMinutes: 20
+            timeoutMinutes: twenty
             options:
               env:
                 - hellod: ss1
