@@ -6,25 +6,28 @@ templatesx: &template-script-x
 jobs:
   - name: sample-job-ZZ
     type: runSh
+    runtime:
+      nodepool: default_cluster
+      timeoutMinutes: twenty
     steps:
         - TASK:
             name: t1
-            runtime:
-              nodepool: default_cluster
-              container: true
-              timeoutMinutes: 20
+            #runtime:
+              #nodepool: default_cluster
+              #container: true
+              #timeoutMinutes: 20
               #options: hello
             script:
                 - echo "hello world"
         - TASK:
            name: t2
-           runtime:
-            nodepool: default_cluster
-            container: true
-            timeoutMinutes: 20
-            options:
-              env:
-                - hellod:ss1
+           #runtime:
+            #nodepool: default_cluster
+            #container: true
+            #timeoutMinutes: 20
+            #options:
+              #env:
+                #- hellod:ss1
            script:
                - echo "hello world t2"
             
