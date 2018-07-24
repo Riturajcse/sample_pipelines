@@ -14,7 +14,7 @@ jobs:
               container: true
               timeoutMinutes: 20
             script:
-                echo "hello world"
+                - echo "hello world"
         - TASK:
            name: t2
            runtime:
@@ -24,15 +24,15 @@ jobs:
             options:
               env:
                 - hellod: ss1
-           #script:
-               #- echo "hello world t2"
+           script:
+               - echo "hello world t2"
             
         
   - name: sample-job-B
     type: runSh
     steps:
       - TASK:
-        #- script: *template-script-x
+        - script: *template-script-x
         - script: echo "This is some more script123"
         
   - name: sample-job-C
