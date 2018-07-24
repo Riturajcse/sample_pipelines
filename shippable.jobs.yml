@@ -45,7 +45,7 @@ jobs:
       - TASK:
           script:
             - echo "This is job C"
-            #- *template-script-x
+            - *template-script-x
 
   #- name: new_job_2
     #type: runSh
