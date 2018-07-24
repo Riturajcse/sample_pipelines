@@ -24,10 +24,10 @@ jobs:
            runtime:
             nodepool: default_cluster
             container: true
-            timeoutMinutes: 20
+            timeoutMinutes: twenty
             options:
               env:
-                - key:val
+                - key: val
            script:
                - echo "hello world t2"
             
