@@ -44,7 +44,7 @@ jobs:
     steps:
       - TASK:
           script:
-            - echo "hello: world"
+            - echo "hello world"
             #- *template-script-x
 
   #- name: new_job_2
