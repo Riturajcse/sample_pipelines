@@ -10,7 +10,8 @@ jobs:
         - TASK:
             #1name: t1
             runtime:
-              nodepool: default_cluster
+              nodepool:
+                - default_cluster
               container: true
               timeoutMinutes: 20
             script:
