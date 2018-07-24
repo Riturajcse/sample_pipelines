@@ -13,7 +13,7 @@ jobs:
               nodepool: default_cluster
               container: true
               timeoutMinutes: 20
-              options: hello
+              #options: hello
             script:
                 - echo "hello world"
         - TASK:
@@ -33,7 +33,7 @@ jobs:
     type: runSh
     steps:
       - TASK:
-        - script: *template-script-x
+        #- script: *template-script-x
         - script: echo "This is some more script123"
         
   - name: sample-job-C
@@ -42,7 +42,7 @@ jobs:
       - TASK:
           script:
             - echo "This is job C"
-            - *template-script-x
+            #- *template-script-x
 
   - name: new_job_2
     type: runSh
