@@ -29,7 +29,7 @@ jobs:
               env:
                 - key: val
            script:
-               - echo "hello: world"
+               - echo "hello world"
             
         
   - name: sample-job-B
@@ -37,7 +37,7 @@ jobs:
     steps:
       - TASK:
         #- script: *template-script-x
-        - script: echo "hello world11"
+        - script: echo "hello: world11"
         
   - name: sample-job-C
     type: runSh
