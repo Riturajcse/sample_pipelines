@@ -8,7 +8,7 @@ jobs:
     type: runSh
     steps:
         - TASK:
-            #1name: t1
+            name: t1
             runtime:
               nodepool:
                 - default_cluster
