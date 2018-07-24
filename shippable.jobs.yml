@@ -37,7 +37,7 @@ jobs:
     steps:
       - TASK:
         #- script: *template-script-x
-        - script: echo "This: is some more script123"
+        - script: echo "hello: world11"
         
   - name: sample-job-C
     type: runSh
