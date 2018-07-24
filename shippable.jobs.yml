@@ -13,6 +13,7 @@ jobs:
               nodepool: default_cluster
               container: true
               timeoutMinutes: 20
+              options: hello
             script:
                 - echo "hello world"
         - TASK:
@@ -23,7 +24,7 @@ jobs:
             timeoutMinutes: 20
             options:
               env:
-                - hellod: ss1
+                - hellod:ss1
            script:
                - echo "hello world t2"
             
