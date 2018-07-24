@@ -7,7 +7,8 @@ jobs:
   - name: sample-job-ZZ
     type: runSh
     runtime:
-      nodepool: default_cluster
+      nodepool:
+        - default_cluster
       timeoutMinutes: twenty
     steps:
         - TASK:
