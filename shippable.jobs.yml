@@ -22,9 +22,10 @@ jobs:
         - TASK:
            name: t2
            runtime:
-            nodepool: default_cluster
+            nodepool:
+              - default_cluster #array
             container: true
-            timeoutMinutes: twenty
+            timeoutMinutes: 20
             options:
               env:
                 - key: val
