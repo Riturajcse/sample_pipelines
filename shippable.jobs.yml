@@ -16,10 +16,10 @@ jobs:
             script:
                 - echo "hello world"
         - TASK:
-           #name: t2
+           name: t2
            runtime:
             nodepool: default_cluster
-            container: true1
+            container: true
             timeoutMinutes: 20
             options:
               env:
