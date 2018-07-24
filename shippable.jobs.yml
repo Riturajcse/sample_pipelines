@@ -37,14 +37,14 @@ jobs:
     steps:
       - TASK:
         #- script: *template-script-x
-        - script: echo "hello: world11"
+        - script: echo "hello world11"
         
   - name: sample-job-C
     type: runSh
     steps:
       - TASK:
           script:
-            - echo "hello world"
+            - echo "hello: world"
             #- *template-script-x
 
   #- name: new_job_2
