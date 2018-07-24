@@ -16,4 +16,9 @@ jobs:
       - TASK:
           script:
             - echo "This is job C"
+            - *template-script-1
+            - *template-script-2
+            - *template-script-3
+            - *template-script-4
+            - *template-script-5
             - *template-script-x
