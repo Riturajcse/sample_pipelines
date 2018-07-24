@@ -21,15 +21,15 @@ jobs:
                 - echo "hello world"
         - TASK:
            name: t2
-           #runtime:
-            #nodepool: default_cluster
-            #container: true
-            #timeoutMinutes: 20
-            #options:
-              #env:
-                #- hellod:ss1
+           runtime:
+            nodepool: default_cluster
+            container: true
+            timeoutMinutes: 20
+            options:
+              env:
+                - key:val
            script:
-               echo "hello world t2"
+               - echo "hello world t2"
             
         
   - name: sample-job-B
